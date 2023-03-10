@@ -1,0 +1,16 @@
+.spiner {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1rem solid var(--color-2);
+    border-top: 1rem solid var(--color-1);
+    animation: spiner 1s linear infinite;
+    margin: 6rem auto;
+}
+
+@keyframes spiner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+

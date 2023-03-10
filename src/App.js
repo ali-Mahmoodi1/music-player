@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HomePage from "./homePage/HomePage";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
+import SingersContextProvider from "./context/singersContext";
+import MusicsContextProvider from "./context/musicContext";
+import Musics from "./musics/Musics";
+import MusicPlayer from "./musicPlayer/musicPlayer";
+import { Navigate, Route, Routes } from "react-router-dom";
+import SingerPage from "./singerPage/singerPage";
+import GoTop from "./go top/GoTop"
 
-function App() {
+let App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SingersContextProvider>
+        <MusicsContextProvider>
+          <Header />
+          <Routes>
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/musics" element={<Musics />} />
+            <Route path="/music/:id" element={<MusicPlayer />} />
+            <Route path="/singer/:id" element={<SingerPage />} />
+            <Route path="/*" element={<Navigate to="/home" />} />
+          </Routes>
+          <Footer />
+          <GoTop />
+        </MusicsContextProvider>
+      </SingersContextProvider>
+    </>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,45 @@
+.home__container {
+    min-height: 90vh;
+    padding: 5rem 1rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home__title {
+    font-size: 2.5rem;
+    margin: 3rem 0;
+    color: var(--color-4);
+}
+
+.music-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more-music{
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: none;
+    color: var(--color-4);
+    font-size: 1.2rem;
+}
+
+.home__singersContainer,
+.home__musicsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width:500px) {
+    .home__musicsContainer {
+        justify-content: space-around;
+    }
+
+    .home__title {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,15 @@
+.Musics_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10rem 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width:450px) {
+    .Musics_container{
+        justify-content: space-around;
+    }
+}

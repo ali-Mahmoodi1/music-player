@@ -1,0 +1,42 @@
+.container {
+    padding: 8px;
+    border-radius: 8px;
+    margin: 1rem;
+}
+
+.img {
+    width: 18rem;
+    border-radius: 12px 12px 0 0;
+}
+
+.title {
+    font-family: "yakan";
+    font-weight: 100;
+    font-size: 1.1rem;
+    color: var(--color-4);
+}
+
+.info {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info img {
+    transform: rotate(180deg);
+    width: 1rem;
+    filter: drop-shadow(0 0 1px rgb(0, 0, 0))
+}
+
+@media (max-width:700px) {
+    .img {
+        width: 12rem;
+    }
+}
+
+@media (max-width:500px) {
+    .img {
+        width: 15rem;
+    }
+}
