@@ -39,7 +39,8 @@
         width: 10rem;
         border-radius: 1.5rem;
         padding: 1rem;
-        margin: 1.5rem .5rem;
+        margin: 1.5rem .8rem;
+        transform: scale(.9);
     }
 
     .homeMusic__singer {
@@ -47,12 +48,12 @@
     }
 
     .homeMusic__img {
-        width: 4.5rem;
+        width: 4rem;
         border-radius: 50% 5% 50% 50%;
         position: absolute;
         top: -20%;
         right: -15%;
-        box-shadow: 0px 0px 12px 3px var(--color-1);
+        box-shadow: 0px 0px 8px 2px var(--color-1);
     }
 }
 
