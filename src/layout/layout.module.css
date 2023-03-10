@@ -99,4 +99,8 @@ header h1 {
     .header__modal {
         bottom: -250%;
     }
+
+    .header__modal button{
+        padding: 2rem auto;
+    }
 }
