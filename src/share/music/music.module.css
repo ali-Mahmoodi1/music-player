@@ -33,14 +33,13 @@
 }
 
 @media (max-width:500px) {
-
     .homeMusic__container {
         background-color: var(--color-2);
         width: 10rem;
         border-radius: 1.5rem;
         padding: 1rem;
         margin: 1.5rem .8rem;
-        transform: scale(.9);
+        transform: scale(1.1);
     }
 
     .homeMusic__singer {

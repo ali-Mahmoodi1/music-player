@@ -36,7 +36,7 @@
 
 @media (max-width:500px) {
     .home__musicsContainer {
-        justify-content: space-around;
+        flex-direction: column;
     }
 
     .home__title {

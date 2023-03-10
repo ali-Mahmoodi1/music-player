@@ -63,15 +63,12 @@
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:500px) {
     .top {
         border-radius: 1.5rem;
     }
 
     .musics {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 }

@@ -8,8 +8,8 @@
     flex-wrap: wrap;
 }
 
-@media (max-width:450px) {
+@media (max-width:500px) {
     .Musics_container{
-        justify-content: space-around;
+        flex-direction: column;
     }
 }
