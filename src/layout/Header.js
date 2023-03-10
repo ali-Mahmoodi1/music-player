@@ -42,11 +42,17 @@ let Header = () => {
         <Link to="/home" className={styles.h1Link}>
           <h1>موزیک پلیر</h1>
         </Link>
-        <button onClick={showModal}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </button>
+        {showModal2 ? (
+          <button className={styles.close} onClick={showModal}>
+            <img src="/images/close.png" alt="" />
+          </button>
+        ) : (
+          <button className={styles.burger} onClick={showModal}>
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+        )}
         <Modal className={styles.header__modal}>
           <button onClick={changeTheme}>تغییر تم</button>
           <Link to="/home">

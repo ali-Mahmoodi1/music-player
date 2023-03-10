@@ -9,8 +9,9 @@ header {
     box-shadow: 0 2px 5px 0 #909090;
 }
 
-header div{
+header div {
     display: flex;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
@@ -26,19 +27,26 @@ header h1 {
     flex: 1;
 }
 
-header button {
+.burger,
+.close {
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
 }
 
-header button div {
+.burger div {
     width: 1.5rem;
     height: .3rem;
     background-color: var(--color-4);
     margin: .15rem;
     border-radius: 2rem;
+}
+
+.close img {
+    width: 25px;
+    height: 25px;
+    filter: drop-shadow(0 0 3px var(--color-4));
 }
 
 /* footer */
@@ -74,6 +82,9 @@ header button div {
     padding: 1rem auto;
     text-align: center;
     border-radius: 10px;
+    border: none;
+    outline: none;
+    background: none;
 }
 
 .header__modal button:hover {
