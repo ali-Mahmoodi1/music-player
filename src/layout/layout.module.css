@@ -35,6 +35,14 @@ header h1 {
     cursor: pointer;
 }
 
+.close {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+    background: var(--color-4);
+}
+
 .burger div {
     width: 1.5rem;
     height: .3rem;
@@ -43,11 +51,7 @@ header h1 {
     border-radius: 2rem;
 }
 
-.close img {
-    width: 25px;
-    height: 25px;
-    filter: drop-shadow(0 0 3px var(--color-4));
-}
+
 
 /* footer */
 
@@ -100,7 +104,7 @@ header h1 {
         bottom: -250%;
     }
 
-    .header__modal button{
+    .header__modal button {
         padding: 1.2rem auto;
     }
 }

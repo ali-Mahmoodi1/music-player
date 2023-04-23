@@ -15,6 +15,7 @@ export default function Musics() {
     let fether = async () => {
       let data = await axios.get("https://music-api-nu-livid.vercel.app/music");
       setMusics(data.data);
+      console.log(musicContext);
     };
     fether();
   }, []);

@@ -6,6 +6,8 @@
     border-radius: 2rem;
     position: relative;
     cursor: pointer;
+    border: none;
+    box-shadow: 0 0 5px var(--color-4);
 }
 
 .homeMusic__img {

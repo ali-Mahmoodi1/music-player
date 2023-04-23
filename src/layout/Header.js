@@ -44,7 +44,7 @@ let Header = () => {
         </Link>
         {showModal2 ? (
           <button className={styles.close} onClick={showModal}>
-            <img src="/images/close.png" alt="" />
+  
           </button>
         ) : (
           <button className={styles.burger} onClick={showModal}>
