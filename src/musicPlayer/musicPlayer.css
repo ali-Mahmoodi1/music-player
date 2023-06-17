@@ -52,19 +52,18 @@
 
 .musicPlayer__bottom button {
     cursor: pointer;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     margin: 1rem;
     outline: none;
     background: none;
     border: 2px solid var(--color-4);
     border-radius: 50%;
     overflow: hidden;
-}
-
-.musicPlayer__bottom img {
-    width: 103%;
-    height: 103%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.5);
 }
 
 .musicPlayer__bottom input {

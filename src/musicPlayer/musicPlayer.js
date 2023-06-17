@@ -1,8 +1,9 @@
 import React, { useRef, useState, useEffect, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import Spiner from "../spiner/Spiner";
-import {musicsContext} from "../context/musicContext"
+import { musicsContext } from "../context/musicContext";
 import "./musicPlayer.css";
+import { FaPlay,FaPause } from "react-icons/fa";
 
 export default function MusicPlayer() {
   // variables
@@ -72,11 +73,11 @@ export default function MusicPlayer() {
       <div className="musicPlayer__bottom">
         {showPLay ? (
           <button onClick={play}>
-            <img src="/images/play.png" alt="play" />
+            <FaPlay />
           </button>
         ) : (
           <button onClick={pause}>
-            <img src="/images/pause.png" alt="play" />
+            <FaPause />
           </button>
         )}
         <input
